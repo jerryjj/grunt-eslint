@@ -66,6 +66,10 @@ module.exports = function (grunt) {
 			console.log(output);
 		}
 
+		if (opts.quiet) {
+			return true;
+		}
+
 		return report.errorCount === 0;
 	});
 };
